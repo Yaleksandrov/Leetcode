@@ -32,3 +32,20 @@
   while left_idx >= 0 and right_idx < input_string_len:
       # do stuff
   ```
+
+
+#### *Important details*
+
+##### in case when string consists ONLY from alphanumeric characters
+
+* [ ] `string.isalnum()` to check if the string is alphanumeric
+* [ ] `string.lower()` to convert string to lowercase
+
+```python
+while left_idx < right_idx:
+    if not input_string.isalnum():
+       left_idx += 1
+       continue # move left index to the left and return to the beginning of the while loop
+    # same for right_idx
+    # compare characters sitting at left_idx and right_idx, - potencially convert to lowercase
+```
